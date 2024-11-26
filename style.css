@@ -1,0 +1,292 @@
+/*
+Theme Name: Richard
+Theme URI: https://templatesjungle.com/
+Author: TemplatesJungle
+Author URI: https://templatesjungle.com/
+Description: Richard is specially developed Websites Template for Online CV Resume.
+Version: 1.1
+*/
+
+/*--------------------------------------------------------------
+This is main CSS file that contains custom style rules used in this template
+--------------------------------------------------------------*/
+
+/*------------------------------------*\
+    Table of contents
+\*------------------------------------*/
+
+/*------------------------------------------------
+
+CSS STRUCTURE:
+
+1. VARIABLES
+
+2. GENERAL TYPOGRAPHY
+  2.1 Padding
+  2.2 Offcanvas
+
+3. SITE STRUCTURE
+  3.1 Header Section
+
+4. Pages Style
+  4.1 Banner
+  4.2 About Me
+  4.3 Projects
+  4.4 Curiosities
+
+/*--------------------------------------------------------------
+/** 1. VARIABLES
+--------------------------------------------------------------*/
+:root {
+  /* widths for rows and containers
+       */
+  --header-height: 160px;
+  --header-height-min: 80px;
+}
+
+/* on mobile devices below 600px
+   */
+
+@media screen and (max-width: 600px) {
+  :root {
+    --header-height: 100px;
+    --header-height-min: 80px;
+  }
+}
+
+/* Theme Colors */
+:root {
+  --accent-color: #E54646;
+  --dark-color: #222222;
+  --light-dark-color: #727272;
+  --light-color: #fff;
+  --grey-color: #dbdbdb;
+  --light-grey-color: #fafafa;
+  --primary-color: #E54646;
+  --light-primary-color: #eef1f3;
+}
+
+/* Fonts */
+:root {
+  --body-font: 'Roboto', sans-serif;
+}
+
+
+body {
+  --bs-link-color: #333;
+  --bs-link-hover-color: #333;
+
+  --bs-link-color-rgb: 40, 40, 40;
+  --bs-link-hover-color-rgb: 0, 0, 0;
+
+  --bs-light-rgb: 248, 248, 248;
+
+  --bs-font-sans-serif: 'Roboto', sans-serif;
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 2;
+  --bs-body-color: #333333;
+
+  --bs-primary: #E54646;
+  --bs-primary-rgb: 229, 70, 70;
+
+  --bs-primary-bg-subtle: #FFF9EB;
+  --bs-border-color: #F7F7F7;
+
+  --bs-secondary-rgb: 230, 243, 251;
+
+  --bs-success-rgb: 238, 245, 228;
+  --bs-danger-rgb: 249, 235, 231;
+  --bs-warning-rgb: 255, 249, 235;
+  --bs-info-rgb: 230, 243, 250;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #333333;
+  font-weight: 600;
+  
+}
+
+h6 {
+  color: #333333;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 0.9rem;
+}
+
+a {
+  text-decoration: none;
+}
+/*
+.breadcrumb.text-white {
+  --bs-breadcrumb-divider-color: #fff;
+  --bs-breadcrumb-item-active-color: var(--bs-primary);
+}
+
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: var(--bs-primary);
+}
+
+.secondary-font {
+  font-family: var(--secondary-font);
+  font-weight: 300;
+}
+*/
+/*--------------------------------------------------------------
+/** 2. GENERAL TYPOGRAPHY
+--------------------------------------------------------------*/
+
+/* Padding
+------------------------------------------------------------- */
+.padding-large {
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+}
+
+.padding-medium {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
+.padding-small {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .padding-large {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+
+  .padding-medium {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+/* Offcanvas
+------------------------------------------------------------- */
+
+.offcanvas {
+  background-color: #222222;
+}
+
+/*----------------------------------------------*/
+/* 3. SITE STRUCTURE */
+/*----------------------------------------------*/
+
+
+/*   3.1 Header Section
+------------------------------------------------------------- */
+.nav-link {
+  color: var(--light-color);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--accent-color);
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--accent-color);
+}
+
+/*----------------------------------------------*/
+/* 4. Pages Style */
+/*----------------------------------------------*/
+
+/* 4.1 Banner
+------------------------------------------------------------- */
+.custom-banner{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(images/home-banner.jpg);
+}
+
+.bg-primary {
+  --bs-bg-opacity: 1;
+  background-color: #0077C8 !important;
+}
+
+.download-button {
+  background-color: #0077C8;
+  color: white;
+  margin-top: 1vh;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 4.2 About Me
+------------------------------------------------------------- */
+.about-me {
+  justify-content: center; 
+  justify-self: center;
+  justify-items: center;
+  align-items: center; 
+  min-height: 50vh;
+  width: 40%;
+  margin-top: 3vh;
+}
+
+/* 4.3 Projects
+------------------------------------------------------------- */
+.projects{
+  display: flex; 
+  justify-content: center; 
+  justify-self: center;
+  align-items: center; 
+  min-height: 50vh;
+  width: 80%;
+  margin-top: 3vh;
+}
+
+.review-content img,
+.review-content video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1vh;
+}
+
+/* 4.4 Curiosities
+------------------------------------------------------------- */
+#curiosities {
+  background-color: #f9f9f9;
+}
+
+#curiosities h3 {
+  font-weight: bold;
+  color: #333;
+}
+
+#curiosities .col-md-4 p {
+  font-size: 1rem;
+  color: #555;
+}

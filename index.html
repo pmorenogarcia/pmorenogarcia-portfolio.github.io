@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pol Moreno Garcia</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="templatesjungle">
+    <meta name="keywords" content="Website Template">
+    <meta name="description" content="Website Template">
+
+    <!--Bootstrap ================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--Link Swiper's CSS ================================================== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Style Sheet ================================================== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts ================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!-- svg icons -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <defs>
+            <symbol id="menu" viewBox="0 0 32 32">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5 8h22M5 16h22M5 24h22" />
+            </symbol>
+            <symbol id="quote" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10m11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10" />
+            </symbol>
+            <symbol id="phone" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M19.44 13c-.22 0-.45-.07-.67-.12a9.4 9.4 0 0 1-1.31-.39a2 2 0 0 0-2.48 1l-.22.45a12.2 12.2 0 0 1-2.66-2a12.2 12.2 0 0 1-2-2.66l.42-.28a2 2 0 0 0 1-2.48a10 10 0 0 1-.39-1.31c-.05-.22-.09-.45-.12-.68a3 3 0 0 0-3-2.49h-3a3 3 0 0 0-3 3.41a19 19 0 0 0 16.52 16.46h.38a3 3 0 0 0 2-.76a3 3 0 0 0 1-2.25v-3a3 3 0 0 0-2.47-2.9m.5 6a1 1 0 0 1-.34.75a1.05 1.05 0 0 1-.82.25A17 17 0 0 1 4.07 5.22a1.1 1.1 0 0 1 .25-.82a1 1 0 0 1 .75-.34h3a1 1 0 0 1 1 .79q.06.41.15.81a11 11 0 0 0 .46 1.55l-1.4.65a1 1 0 0 0-.49 1.33a14.5 14.5 0 0 0 7 7a1 1 0 0 0 .76 0a1 1 0 0 0 .57-.52l.62-1.4a14 14 0 0 0 1.58.46q.4.09.81.15a1 1 0 0 1 .79 1Z" />
+            </symbol>
+            <symbol id="envelope" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3m-.41 2l-5.88 5.88a1 1 0 0 1-1.42 0L5.41 6ZM20 17a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7.41l5.88 5.88a3 3 0 0 0 4.24 0L20 7.41Z" />
+            </symbol>
+            <symbol id="dribbble" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m0 2a7.94 7.94 0 0 1 5.51 2.22a25 25 0 0 1-4.83 2.18a29 29 0 0 0-2.87-4.09A8 8 0 0 1 12 4M7.89 5.15A27 27 0 0 1 10.7 9a25 25 0 0 1-6 .74h-.36a8 8 0 0 1 3.55-4.59M6 17.31A7.9 7.9 0 0 1 4 12v-.29h.68a26.7 26.7 0 0 0 7-1c.32.61.62 1.24.91 1.89a14.3 14.3 0 0 0-4.29 2.41l-.3.24a21 21 0 0 0-2 2.06M12 20a7.9 7.9 0 0 1-4.47-1.37a18 18 0 0 1 1.56-1.58l.32-.27a12.6 12.6 0 0 1 4-2.27a32 32 0 0 1 1.4 5A8.1 8.1 0 0 1 12 20m4.63-1.49a35 35 0 0 0-1.28-4.46h.34a.25.25 0 0 1 .12 0h.69a9.4 9.4 0 0 1 3.09.53a7.94 7.94 0 0 1-2.96 3.93M16.5 12h-.62a1.6 1.6 0 0 0-.39 0a7 7 0 0 0-.81.1h-.1c-.29-.67-.59-1.32-.92-2a26.6 26.6 0 0 0 5.13-2.4A8 8 0 0 1 20 12v.51a11.5 11.5 0 0 0-3.5-.51" />
+            </symbol>
+            <symbol id="linkedin" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M17.5 8.999a5.4 5.4 0 0 0-2.565.645A1 1 0 0 0 14 8.999h-4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-5.5a1 1 0 1 1 2 0v5.5a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-7.5a5.507 5.507 0 0 0-5.5-5.5m3.5 12h-2v-4.5a3 3 0 1 0-6 0v4.5h-2v-10h2v.703a1 1 0 0 0 1.781.625A3.483 3.483 0 0 1 21 14.5Zm-14-12H3a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-12a1 1 0 0 0-1-1m-1 12H4v-10h2ZM5.015 1.542a3.233 3.233 0 1 0-.057 6.457h.028a3.233 3.233 0 1 0 .029-6.457m-.029 4.457h-.028a1.222 1.222 0 0 1-1.37-1.228c0-.747.56-1.229 1.427-1.229A1.234 1.234 0 0 1 6.41 4.771c0 .746-.56 1.228-1.425 1.228" />
+            </symbol>
+            <symbol id="github" viewBox="0 0 496 512">
+                <path fill="currentColor"
+                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+            </symbol>
+            <symbol id="whatsapp" viewBox="0 0 448 512">
+                 <path fill="currentColor"
+                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>    
+            </symbol>
+
+
+            <!-- 
+            <symbol xmlns="http://www.w3.org/2000/svg" id="link" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M12 19a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0-4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm-5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm7-12h-1V2a1 1 0 0 0-2 0v1H8V2a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 17a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9h16Zm0-11H4V6a1 1 0 0 1 1-1h1v1a1 1 0 0 0 2 0V5h8v1a1 1 0 0 0 2 0V5h1a1 1 0 0 1 1 1ZM7 15a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0 4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Z" />
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-right" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M17.92 11.62a1 1 0 0 0-.21-.33l-5-5a1 1 0 0 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l5-5a1 1 0 0 0 .21-.33a1 1 0 0 0 0-.76Z" />
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" id="category" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M19 5.5h-6.28l-.32-1a3 3 0 0 0-2.84-2H5a3 3 0 0 0-3 3v13a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-10a3 3 0 0 0-3-3Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-13a1 1 0 0 1 1-1h4.56a1 1 0 0 1 .95.68l.54 1.64a1 1 0 0 0 .95.68h7a1 1 0 0 1 1 1Z" />
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" id="calendar" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z" />
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" id="heart" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M20.16 4.61A6.27 6.27 0 0 0 12 4a6.27 6.27 0 0 0-8.16 9.48l7.45 7.45a1 1 0 0 0 1.42 0l7.45-7.45a6.27 6.27 0 0 0 0-8.87Zm-1.41 7.46L12 18.81l-6.75-6.74a4.28 4.28 0 0 1 3-7.3a4.25 4.25 0 0 1 3 1.25a1 1 0 0 0 1.42 0a4.27 4.27 0 0 1 6 6.05Z" />
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" id="plus" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2Z" />
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" id="minus" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M19 11H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2Z" />
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" id="cart" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M8.5 19a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 8.5 19ZM19 16H7a1 1 0 0 1 0-2h8.491a3.013 3.013 0 0 0 2.885-2.176l1.585-5.55A1 1 0 0 0 19 5H6.74a3.007 3.007 0 0 0-2.82-2H3a1 1 0 0 0 0 2h.921a1.005 1.005 0 0 1 .962.725l.155.545v.005l1.641 5.742A3 3 0 0 0 7 18h12a1 1 0 0 0 0-2Zm-1.326-9l-1.22 4.274a1.005 1.005 0 0 1-.963.726H8.754l-.255-.892L7.326 7ZM16.5 19a1.5 1.5 0 1 0 1.5 1.5a1.5 1.5 0 0 0-1.5-1.5Z" />
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" id="check" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M18.71 7.21a1 1 0 0 0-1.42 0l-7.45 7.46l-3.13-3.14A1 1 0 1 0 5.29 13l3.84 3.84a1 1 0 0 0 1.42 0l8.16-8.16a1 1 0 0 0 0-1.47Z" />
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" id="trash" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M10 18a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1ZM20 6h-4V5a3 3 0 0 0-3-3h-2a3 3 0 0 0-3 3v1H4a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h-4Zm7 14a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V8h10Zm-3-1a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1Z" />
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" id="star-outline" viewBox="0 0 15 15">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    d="M7.5 9.804L5.337 11l.413-2.533L4 6.674l2.418-.37L7.5 4l1.082 2.304l2.418.37l-1.75 1.793L9.663 11L7.5 9.804Z" />
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" id="star-solid" viewBox="0 0 15 15">
+                <path fill="currentColor"
+                    d="M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z" />
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" id="search" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" id="user" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M15.71 12.71a6 6 0 1 0-7.42 0a10 10 0 0 0-6.22 8.18a1 1 0 0 0 2 .22a8 8 0 0 1 15.9 0a1 1 0 0 0 1 .89h.11a1 1 0 0 0 .88-1.1a10 10 0 0 0-6.25-8.19ZM12 12a4 4 0 1 1 4-4a4 4 0 0 1-4 4Z" />
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" id="close" viewBox="0 0 15 15">
+                <path fill="currentColor"
+                    d="M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z" />
+            </symbol> -->
+        </defs>
+    </svg>
+
+    <!-- nav bar  -->
+    <nav class="main-menu d-flex navbar fixed-top py-4">
+        <div class="container">
+            <div class="main-logo">
+                <a href="#home" class="d-none d-md-flex">
+                    <img src="images/logo-pmg-resized.png" alt="logo" class="img-fluid" style="width: fit-content; min-height: 3vh; max-height: 8vh;">
+                </a>
+                <a href="#home" class="d-flex d-md-none">
+                    <img src="images/logo-pmg.png" alt="logo" class="img-fluid" style="max-height: 9vh;">
+                </a>
+            </div>
+
+            <ul class="d-none d-lg-flex list-unstyled gap-3 m-0">
+                <li class="social">
+                    <a href="https://wa.me/34651903236">
+                        <svg class="social text-white" width="30" height="30">
+                            <use xlink:href="#whatsapp"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social">
+                    <a href="https://www.linkedin.com/in/pol-moreno-garcia-878031244/">
+                        <svg class="social text-white" width="30" height="30">
+                            <use xlink:href="#linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social">
+                    <a href="https://github.com/pmorenogarcia">
+                        <svg class="social text-white" width="30" height="30">
+                            <use xlink:href="#github"></use>
+                        </svg>
+                    </a>
+                </li>
+                
+            </ul>
+
+            <div class="d-none d-lg-flex align-items-end">
+                <ul class="d-flex justify-content-end list-unstyled m-0 gap-3">
+                    <li>
+                        <svg class="social text-white me-1" width="20" height="20">
+                            <use xlink:href="#envelope"></use>
+                        </svg>
+
+                        <a href="mailto:pol.moreno.garcia@outlook.com" class="text-white">pol.moreno.garcia@outlook.com</a>
+                    </li>
+                    <li>
+                        <svg class="social text-white me-1" width="20" height="20">
+                            <use xlink:href="#phone"></use>
+                        </svg>
+                        <a href="tel:+34651903236" class="text-white">+34 651 90 32 36</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+            <button class="navbar-toggler border-0 shadow-none p-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <svg class="menu text-white" width="30" height="30">
+                    <use xlink:href="#menu"></use>
+                </svg>
+            </button>
+
+            <!-- side menu  -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+
+                <div class="offcanvas-header justify-content-center p-4">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body justify-content-between">
+
+                    <ul class="navbar-nav menu-list list-unstyled d-flex p-5 pt-0">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link fs-4 p-0 active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link fs-4 p-0">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#skills" class="nav-link fs-4 p-0">Skills & Tools</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#projects" class="nav-link fs-4 p-0">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#education" class="nav-link fs-4 p-0">Education & Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#curiosities" class="nav-link fs-4 p-0">Curiosities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#footer" class="nav-link fs-4 p-0">Contact</a>
+                        </li>
+                    </ul>
+
+                    <ul class="d-flex d-lg-none list-unstyled justify-content-center gap-3 mt-5 mb-3">
+                        <li class="social">
+                            <a href="https://wa.me/34651903236">
+                                <svg class="social text-white" width="30" height="30">
+                                    <use xlink:href="#whatsapp"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social">
+                            <a href="https://www.linkedin.com/in/pol-moreno-garcia-878031244/">
+                                <svg class="social text-white" width="30" height="30">
+                                    <use xlink:href="#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social">
+                            <a href="https://github.com/pmorenogarcia">
+                                <svg class="social text-white" width="30" height="30">
+                                    <use xlink:href="#github"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="d-block d-lg-none list-unstyled my-3 gap-3">
+                        <li class="text-center">
+                            <svg class="social text-white me-1" width="20" height="20">
+                                <use xlink:href="#envelope"></use>
+                            </svg>
+
+                            <a href="mailto:pol.moreno.garcia@outlook.com" class="text-white">pol.moreno.garcia@outlook.com</a>
+                        </li>
+                        <li class="text-center">
+                            <svg class="social text-white me-1" width="20" height="20">
+                                <use xlink:href="#phone"></use>
+                            </svg>
+
+                            <a href="tel:+34651903236" class="text-white">+34 651 90 32 36</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <section id="home" class="custom-banner" style="background-color: #222222;">
+        <div class="container position-relative padding-large">
+            <div class="row align-items-center">
+                <div class="offset-lg-1 col-lg-7 z-1">
+                    <h2 class="display-1 fw-bold text-white">My name is <span style="color: #0077C8;">Pol Moreno Garcia</span></h2>
+                    <h6 class="text-white ">Mechanical Engineer & Software Developer.</h6>
+                    <a href="cv/CV_pmorenogarcia.pdf" class="download-button" download="pmorenogarcia_CV.pdf">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="position-relative">
+        <div class="about-me padding-small">
+            <h4 class="fw-bold display-4 m-0">ABOUT ME</h4>
+            <p class="fw-bold text-black-50 m-0" style="text-align: justify; padding-top: 3vh;">My name is Pol and I am 23 years old Mechanical Engineering graduate at the UPC Manresa, now studying a Bachelor's degree in Techniques for Software Application Development at UOC. I consider myself an ambitious person with an special ability to learn. Selfcritical ability that drives me and motivates me to personal growth in all areas. I have excelent experience in teamwork and leadership. I'm passionate about the world or sector related to new technologies. I'm also the type of person who is open to the public, passionate and eager to learn. </p>
+        </div>
+    </section>
+
+    <section id="skills" class="position-relative">
+        <div id="skills" class="container padding-small">
+            <div class="row">
+                <div class="offset-lg-1 col-lg-5 mb-5 mb-lg-0">
+                    <h3 class="text-uppercase mb-5">Skills IN DEVELOPMENT</h3>
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-3">Java</h6>
+                        <div class="progress" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                            aria-valuemax="100" style="height: 5px; border-radius: 0;">
+                            <div class="progress-bar bg-primary" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-3">C++</h6>
+                        <div class="progress" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+                            aria-valuemax="100" style="height: 5px; border-radius: 0;">
+                            <div class="progress-bar bg-primary" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-3">Python</h6>
+                        <div class="progress" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                            aria-valuemax="100" style="height: 5px; border-radius: 0;">
+                            <div class="progress-bar bg-primary" style="width: 40%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-3">HTML/CSS</h6>
+                        <div class="progress" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+                            aria-valuemax="100" style="height: 5px; border-radius: 0;">
+                            <div class="progress-bar bg-primary" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-3">Javascript</h6>
+                        <div class="progress" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                            aria-valuemax="100" style="height: 5px; border-radius: 0;">
+                            <div class="progress-bar bg-primary" style="width: 50%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offset-lg-1 col-lg-5 mb-5 mb-lg-0">
+                    <h3 class="text-uppercase mb-5">Tools</h3>
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-3">Git/GitHub</h6>
+                        <div class="progress" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+                            aria-valuemax="100" style="height: 5px; border-radius: 0;">
+                            <div class="progress-bar bg-primary" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-3">VSCode</h6>
+                        <div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100" style="height: 5px; border-radius: 0;">
+                            <div class="progress-bar bg-primary" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-3">Intelij</h6>
+                        <div class="progress" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                            aria-valuemax="100" style="height: 5px; border-radius: 0;">
+                            <div class="progress-bar bg-primary" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-3">POSTGRESQL</h6>
+                        <div class="progress" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                            aria-valuemax="100" style="height: 5px; border-radius: 0;">
+                            <div class="progress-bar bg-primary" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h6 class="fw-bold mb-3">mongodb</h6>
+                        <div class="progress" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                            aria-valuemax="100" style="height: 5px; border-radius: 0;">
+                            <div class="progress-bar bg-primary" style="width: 40%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="offset-lg-3 col-lg-6 text-center mb-5">
+                    <h3 class="text-uppercase mb-5">PROJECTS</h3>
+                    <h6 class="mb-3">My recent works</h6>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-stretch">
+                <!-- First element -->
+                <div class="col-md-6 d-flex flex-column align-items-center justify-content-start mb-5">
+                    <div class="container position-relative">
+                        <div>
+                            <div class="swiper testimonial-swiper py-3 py-md-5">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <div class="review-content d-lg-flex">
+                                                <img src="images/handbike.jpg" alt="work-img" class="img-fluid" style="border-radius: 1vh;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <div class="review-content d-lg-flex">
+                                                <img src="images/handbike2.jpg" alt="work-img" class="img-fluid" style="border-radius: 1vh;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <div class="review-content d-lg-flex align-items-end justify-content-center position-relative">
+                                                <video src="images/attachment.mp4" alt="work-img" class="img-fluid" style="border-radius: 1vh;" controls muted autoplay>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <div class="review-content d-lg-flex align-items-end justify-content-center position-relative">
+                                                <img src="images/prize.jpg" alt="work-img" class="img-fluid" style="border-radius: 1vh;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination pt-5"></div>
+                            </div>
+                        </div>
+                            <h6 class="text-center mt-4">ATTACHABLE HANDBIKE</h6>
+                        <p class="text-center">Made in UPC</p>
+                        <p class="text-center" style="border-top: 2px solid black; padding-top: 2vh;">Design of a product (Attachable Handbike) reinventing the way it is manufactured to reduce cost and maintain quality and performance.</p>
+                        <p class="text-center" style="border-top: 2px solid black; padding-top: 2vh;">1st Prize for Best Final Degree Project (TFG) in Industrial Engineering at UPC Manresa.</p>
+                    </div>
+                </div>
+                <!-- Second element -->
+                <div class="col-md-6 d-flex flex-column align-items-center justify-content-start mb-5">
+                    <div class="container position-relative">
+                        <div>
+                            <div class="swiper testimonial-swiper py-3 py-md-5">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <div class="review-content d-lg-flex">
+                                                <img src="images/TrainStationProject.jpg" alt="work-img" class="img-fluid" style="border-radius: 1vh;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <div class="review-content d-lg-flex">
+                                                <img src="images/TrainStationProject2.jpg" alt="work-img" class="img-fluid" style="border-radius: 1vh;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <div class="review-content d-lg-flex">
+                                                <img src="images/TrainStationProject3.jpg" alt="work-img" class="img-fluid" style="border-radius: 1vh;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="review">
+                                            <div class="review-content d-lg-flex">
+                                                <img src="images/TrainStationProject4.jpg" alt="work-img" class="img-fluid" style="border-radius: 1vh;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination pt-5"></div>
+                            </div>
+                        </div>
+                        <h6 class="text-center mt-4">TRAIN TICKET SIMULATOR</h6>
+                    <p class="text-center">Made in UOC</p>
+                    <p class="text-center" style="border-top: 2px solid black; padding-top: 2vh;">Small project made in UOC that simulates the process of buying train tickets with an interactive platform.</p>
+                </div>
+                <!---->
+            </div>
+        </div>
+
+    </section>
+
+    <section id="education" class="position-relative padding-medium">
+        <div class="container">
+            <div class="row">
+                <div class="offset-lg-1 col-lg-4 mb-5 mb-lg-0">
+                    <h3 class="text-uppercase mb-5">Education</h3>
+                    <div>
+                        <h4 class="fw-bold display-5 m-0">2023 - Present</h4>
+                        <p class="fw-bold fst-italic text-black-50 m-0">Bachelors in Techniques for Software Application Development</p>
+                        <p class="text-black-50">Universitat Oberta de Catalunya (UOC)</p>
+                    </div>
+                    <div>
+                        <h4 class="fw-bold display-5 m-0">2019 - 2023</h4>
+                        <p class="fw-bold fst-italic text-black-50 m-0">Bachelors in Mechanical Engineering</p>
+                        <p class="text-black-50">Universitat Politècnica de Catalunya (UPC)</p>
+                    </div>
+                    <div>
+                        <h4 class="fw-bold display-5 m-0">2019</h4>
+                        <p class="fw-bold fst-italic text-black-50 m-0">First Certificate English</p>
+                        <p class="text-black-50">CAMBRIDGE English</p>
+                    </div>
+                    <div>
+                        <h4 class="fw-bold display-5 m-0">2018</h4>
+                        <p class="fw-bold fst-italic text-black-50 m-0">CIATE</p>
+                        <p class="text-black-50">Curso de Iniciacion a Tècnico de Deportes - UCI Cycling Monitor</p>
+                    </div>
+                </div>
+                <div class="offset-lg-2 col-lg-4">
+                    <h3 class="text-uppercase mb-5">Experience</h3>
+                    <div>
+                        <h4 class="fw-bold display-5 m-0">September 2022 - February 2023</h4>
+                        <p class="fw-bold fst-italic text-black-50 m-0">DEIMA INGENIEROS: <span
+                                class="fw-normal">Design Engineer</span></p>
+                        <p class="text-black-50">In this role I was responsible for designing 3D machinery for the automobile sector</p>
+                    </div>
+                    <div>
+                        <h4 class="fw-bold display-5 m-0">2016 - Present</h4>
+                        <p class="fw-bold fst-italic text-black-50 m-0">Moto Club Sant Andreu de la Barca: <span
+                                class="fw-normal">Volunteer</span></p>
+                        <p class="text-black-50">BMX Teacher, Event organization member and Bike mechanic</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="curiosities" class="py-5 bg-light">
+        <div class="container">
+            <h3 class="text-center mb-4">CURIOSITIES ABOUT ME</h3>
+            <div class="row text-center">
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 d-flex flex-column align-items-center">
+                        <img src="images/agrupa.png" alt="AgrupaJove SAB" class="img-fluid rounded-circle" style="max-width: 150px; aspect-ratio: 1;">
+                        <div class="card-body">
+                            <h6>AgrupaJove SAB</h6>
+                            <p>Member of a youth association that organizes events for my town.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 d-flex flex-column align-items-center">
+                        <img src="images/motoclub.png" alt="Castellers de l'Adroc" class="img-fluid rounded-circle" style="max-width: 150px; aspect-ratio: 1;">
+                        <div class="card-body">
+                            <h6>Motoclub Sab</h6>
+                            <p>Member of Motoclub Sant Andreu de la Barca, cycling team as a rider, teacher and staff member.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 d-flex flex-column align-items-center">
+                        <img src="images/castellers.jpg" alt="Castellers de l'Adroc" class="img-fluid rounded-circle" style="max-width: 150px; aspect-ratio: 1;">
+                        <div class="card-body">
+                            <h6>Castellers de l'Adroc</h6>
+                            <p>Proud participant in the Catalan tradition of building human towers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" style="background-color: #222222;">
+        <div class="container" style="padding-top: 2vh;">
+            <div class="row padding-small pt-0">
+                <div class="col-md-2 offset-lg-1">
+                    <div class="footer-menu">
+                        <ul class="menu-list list-unstyled">
+                            <li class="menu-item mb-2">
+                                <a href="#home" class="footer-link text-white">Home</a>
+                            </li>
+                            <li class="menu-item mb-2">
+                                <a href="#about" class="footer-link text-white">About</a>
+                            </li>
+                            <li class="menu-item mb-2">
+                                <a href="#skills" class="footer-link text-white">Skills</a>
+                            </li>
+                            <li class="menu-item mb-2">
+                                <a href="#skills" class="footer-link text-white">Tools</a>
+                            </li>
+                            <li class="menu-item mb-2">
+                                <a href="#projects" class="footer-link text-white">Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-menu">
+                        <ul class="menu-list list-unstyled">
+                            <li class="menu-item mb-2">
+                                <a href="#education" class="footer-link text-white">Education</a>
+                            </li>
+                            <li class="menu-item mb-2">
+                                <a href="#education" class="footer-link text-white">Experience</a>
+                            </li>
+                            <li class="menu-item mb-2">
+                                <a href="#curiosities" class="footer-link text-white">Curiosities</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="offset-lg-2 col-md-4">
+                    <div class="footer-menu">
+                        <a href="mailto:pol.moreno.garcia@outlook.com" class="text-white fs-4 text-decoration-underline">pol.moreno.garcia@outlook.com</a>
+                        <p class="text-white">Sant Andreu de la Barca, Catalonia, Spain 08740</p>
+                        <ul class="d-flex list-unstyled gap-3 m-0">
+                            <li class="social">
+                                <a href="https://wa.me/34651903236">
+                                    <svg class="social text-white" width="30" height="30">
+                                        <use xlink:href="#whatsapp"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social">
+                                <a href="https://www.linkedin.com/in/pol-moreno-garcia-878031244/">
+                                    <svg class="social text-white" width="30" height="30">
+                                        <use xlink:href="#linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social">
+                                <a href="https://github.com/pmorenogarcia">
+                                    <svg class="social text-white" width="30" height="30">
+                                        <use xlink:href="#github"></use>
+                                    </svg>
+                                </a>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="text-white">
+        <div class="container py-3">
+            <div class="offset-lg-1 col-md-5 text-white copyright">
+                <p> ©2024 Richard Max - Modified HTML template</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -171,6 +171,17 @@ a {
     padding-bottom: 5rem;
   }
 }
+@media (max-width: 576px) {
+  .main-logo img {
+      max-width: 35vh; /* Adjust the logo size for smaller screens */
+  }
+  .navbar-toggler {
+      position: absolute;
+      right: 10px; /* Adjust the position of the navbar toggler button */
+      top: 50%;
+      transform: translateY(-50%);
+  }
+}
 
 /* Offcanvas
 ------------------------------------------------------------- */
